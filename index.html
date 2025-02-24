@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REWOP College Symposium</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>REWOP 2K25 ⚡⚡</h1>
+            <nav>
+                <div class="menu-icon" onclick="toggleMenu()">☰</div>
+                <ul id="nav-menu">
+                    <li><a href="#" onclick="showSection('home', true)">Home</a></li>
+                    <li><a href="#" onclick="showSection('technical-events', true)">Technical Events</a></li>
+                    <li><a href="#" onclick="showSection('non-technical-events', true)">Non-Technical Events</a></li>
+                    <li><a href="#" onclick="showSection('contact-us', true)">Contact Us</a></li>
+                    <li><a href="#" onclick="showSection('organizers', true)">Organizers</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="floating-icons">
+        <a href="https://www.instagram.com/jeevith_pranav?igsh=MWY5MnI4YjdiaDBmNA==" target="_blank">
+            <img src="instagram1.png" alt="Instagram">
+        </a>
+        <a href="https://www.linkedin.com/in/jeevith-pranav-7a6043290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+            <img src="linkidin1.png" alt="LinkedIn">
+        </a>
+    </div>
+    <div class="countdown" id="countdown">
+        <div id="countdown-timer"></div>
+    </div>
+    <main>
+        <section id="home" class="home-section">
+            <div class="hero">
+                <div class="hero-content">
+                    <h2>Welcome to REWOP 2K25</h2>
+                    <p>Join us on <span class="highlight-date">March 19th</span> for a day filled with exciting events, activities, and opportunities to showcase your talents!</p>
+                    <a href="#" class="hero-button" onclick="showSection('technical-events', false)">Explore Events</a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="about">
+                    <h2>About REWOP</h2>
+                    <p>The REWOP College Symposium is an annual event that brings together students, faculty, and industry professionals for a day of learning, competition, and networking. Our symposium features a variety of technical and non-technical events designed to challenge participants and foster innovation.</p>
+                </div>
+                <div class="features">
+                    <div class="feature">
+                        <img src="innovation1.jpeg" alt="Innovation">
+                        <h3>Innovation</h3>
+                        <p>Engage in cutting-edge technical events and showcase your innovative ideas.</p>
+                    </div>
+                    <div class="feature">
+                        <img src="team work.jpeg" alt="Teamwork">
+                        <h3>Teamwork</h3>
+                        <p>Collaborate with peers and compete in team-based challenges.</p>
+                    </div>
+                    <div class="feature">
+                        <img src="networking.jpeg" alt="Networking">
+                        <h3>Networking</h3>
+                        <p>Connect with industry professionals and expand your network.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="technical-events" class="events-section" style="display: none;">
+            <div class="container">
+                <h2>Technical Events</h2>
+                <ul>
+                    <li onclick="showEventDetails('paper-presentation')">
+                        <img src="paperpresentation.jpeg" alt="Paper Presentation">
+                        <span>Paper Presentation</span>
+                    </li>
+                    <li onclick="showEventDetails('poster-presentation')">
+                        <img src="posterpresentation.jpeg" alt="Poster Presentation">
+                        <span>Poster Presentation</span>
+                    </li>
+                    <li onclick="showEventDetails('circuit-debugging')">
+                        <img src="circuitdebugging.jpeg" alt="Circuit Debugging">
+                        <span>Circuit Debugging</span>
+                    </li>
+                    <li onclick="showEventDetails('workshop')">
+                        <img src="evworkshop.jpeg" alt="Workshop">
+                        <span>Workshop</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="non-technical-events" class="events-section" style="display: none;">
+            <div class="container">
+                <h2>Non-Technical Events</h2>
+                <ul>
+                    <li onclick="showEventDetails('ipl-auction')">
+                        <img src="iplaution.jpeg" alt="IPL Auction">
+                        <span>IPL Auction</span>
+                    </li>
+                    <li onclick="showEventDetails('music-fest')">
+                        <img src="musicfest.jpeg" alt="Music Fest">
+                        <span>Music Fest</span>
+                    </li>
+                    <li onclick="showEventDetails('meme-creation')">
+                        <img src="memecreation.jpeg" alt="Meme Creation">
+                        <span>Meme Creation</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="contact-us" class="contact-section" style="display: none;">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <img src="roshini.JPG" alt="Organizer 1">
+                        <h3>ROSHINI M</h3>
+                        <h4>3rd yr EEE</h4>
+                        <h4>PAPER PRESENTATION</h4>
+                        <p><a href="https://wa.me/1234567890" target="_blank">WhatsApp</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="ghunavarshini1.jpeg" alt="Organizer 2">
+                        <h3>GHUNAVARSHINI N</h3>
+                        <h4>3rd yr EEE</h4>
+                        <h4>POSTER PRESENTATION</h4>
+                        <p><a href="roshini.JPG" target="_blank">WhatsApp</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="ragul.jpg" alt="Organizer 3">
+                        <h3>Ragul Venugopal</h3>
+                        <h4>3rd yr EEE</h4>
+                        <h4>CIRCUIT DEBUGGING</h4>
+                        <p><a href="https://wa.me/1234567892" target="_blank">WhatsApp</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="roshini.JPG" alt="Organizer 4">
+                        <h3>ROSHINI M</h3>
+                        <h4>3rd yr EEE</h4>
+                        <h4>EV WORKSHOP</h4>
+                        <p><a href="https://wa.me/1234567893" target="_blank">WhatsApp</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="roshini.JPG" alt="Organizer 5">
+                        <h3>ROSHINI M</h3>
+                        <h4>3rd yr EEE</h4>
+                        <h4>IPL AUTION</h4>
+                        <p><a href="https://wa.me/1234567894" target="_blank">WhatsApp</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="roshini.JPG" alt="Organizer 6">
+                        <h3>ROSHINI M</h3>
+                        <h4>3rd yr EEE</h4>
+                        <h4>MUSIC FEST</h4>
+                        <p><a href="https://wa.me/1234567895" target="_blank">WhatsApp</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="roshini.JPG" alt="Organizer 7">
+                        <h3>ROSHINI M</h3>
+                        <h4>3rd yr EEE</h4>
+                        <h4>MEME CREATION</h4>
+                        <p><a href="https://wa.me/1234567896" target="_blank">WhatsApp</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="organizers" class="organizers-section" style="display: none;">
+            <div class="container">
+                <h2>Organizers</h2>
+                <div class="organizer-grid">
+                    <div class="organizer-item">
+                        <img src="divya.jpg" alt="Incharge of REWOP">
+                        <h3>Incharge of REWOP</h3>
+                        <h4>Mrs.N.Divya</h4>
+                        <h4>Asst. Prof (Sl.g)</h4>
+                        <p>Contact: <a href="https://wa.me/9976777219" target="_blank">WhatsApp</a></p>
+                    </div>
+                    <div class="organizer-item">
+                        <img src="jeevith.jpg" alt="Secretary">
+                        <h3>Secretary</h3>
+                        <h4>Mr.Gokulnathan M</h4>
+                        <p>4th Year</p>
+                    </div>
+                    <div class="organizer-item">
+                        <img src="siva.jpg" alt="Additional Secretary">
+                        <h3>Additional Secretary</h3>
+                        <h4>Mr.Madhan A</h4>
+                        <p>4th Year</p>
+                    </div>
+                    <div class="organizer-item">
+                        <img src="jeevith.jpg" alt="Joint Secretary 1">
+                        <h3>Joint Secretary </h3>
+                        <h4>Mr.Dhanush Kannan M S</h4>
+                        <p>3rd Year</p>
+                    </div>
+                    <div class="organizer-item">
+                        <img src="jeevith.jpg" alt="Joint Secretary 2">
+                        <h3>Joint Secretary </h3>
+                        <h4>Mr.Sumesh</h4>
+                        <p>3rd Year</p>
+                    </div>
+                    <div class="organizer-item">
+                        <img src="siva.jpg" alt="Treasurer 1">
+                        <h3>Treasurer</h3>
+                        <h4>Ms.Jovarshini S</h4>
+                        <p>3rd Year</p>
+                    </div>  
+                    <div class="organizer-item">
+                        <img src="siva.jpg" alt="Treasurer 2">
+                        <h3>Treasurer</h3>
+                        <h4>Ms.Ghunavarshini N</h4>
+                        <p>3rd Year</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="event-details" class="event-details-section" style="display: none;">
+            <div class="container">
+                <h2 id="event-title">Event Title</h2>
+                <p id="event-rules">Event rules will be displayed here.</p>
+                <p>Register for the event: <a href="https://forms.gle/your-google-form-link" target="_blank">Google Form Registration</a></p>
+                <button onclick="showSection('home', false)">Back to Home</button>
+            </div>
+        </section>
+    </main>
+    <div class="running-message">
+        <p>On-spot registrations are available!</p>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+                <h3>SRI RAMAKRISHNA ENGINEERING COLLEGE</h3>
+                <p>Sri Ramakrishna Engineering College (SREC) is an autonomous Engineering college in India founded by Sevaratna R. Venkatesalu. It is affiliated with the Anna University in Chennai, and approved by the All India Council for Technical Education (AICTE) of New Delhi. It is accredited by the NBA (National Board of Accreditation) for most of its courses and by the Government of Tamil Nadu.</p>
+                <p><a href="https://srec.ac.in/" target="_blank">about SREC</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>REWOP 2K25</h3>
+                <p>The REWOP 2K25 is an event that brings together students, faculty, and industry professionals for a day of learning, competition, and networking.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Website Developed  By</h3>
+                <p>JEEVITH PRANAV P</p>
+                <p><a href="https://www.linkedin.com/in/jeevith-pranav-7a6043290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Connect on LinkedIn</a></p>
+                <p><a href="https://wa.me/9342906002" target="_blank">Connect on WhatsApp</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; jeevith Pranav</p>
+        </div>
+    </footer>
+</body>
+</html>
