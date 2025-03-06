@@ -1,15 +1,15 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f4f4f4;
+    background-color: #b2b2b2;
     overflow-x: hidden;
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
+    background: linear-gradient(45deg, #08e631, #01d1d1);
+    color: rgb(56, 43, 68);
     padding: 1rem 0;
     text-align: center;
     position: relative;
@@ -25,9 +25,18 @@ header .container {
     padding: 0 20px;
 }
 
+header .logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
 header h1 {
     margin: 0;
     font-size: 2rem;
+    background: -webkit-linear-gradient(#ff0000,#3302f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 nav {
@@ -38,6 +47,7 @@ nav {
     display: none;
     font-size: 2rem;
     cursor: pointer;
+    color: white;
 }
 
 nav ul {
@@ -61,12 +71,13 @@ nav ul li a {
     font-size: 1rem;
     padding: 10px;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a:hover,
 nav ul li a.active {
-    background-color: #45a049;
+    background-color: #ff6f61;
+    color: #fff;
 }
 
 .hero {
@@ -77,6 +88,8 @@ nav ul li a.active {
     align-items: center;
     color: white;
     text-align: center;
+    background-size: cover;
+    background-position: center;
 }
 
 .hero-content {
@@ -135,6 +148,8 @@ nav ul li a.active {
 .feature img {
     width: 200px;
     height: 200px;
+    border-radius: 10%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .feature h3 {
@@ -142,12 +157,15 @@ nav ul li a.active {
     font-size: 1.5rem;
 }
 
-.home-section, .events-section, .organizers-section, .event-details-section {
-    background: white;
+.home-section, .events-section, .contact-section, .event-details-section, .location-section {
+    background-image: url(bg4.jpeg);
     margin-bottom: 2rem;
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-size: cover;
+    background-position: center;
+
 }
 
 .events-section ul {
@@ -165,15 +183,16 @@ nav ul li a.active {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background: #f4f4f4;
+    background:linear-gradient(#08e63196,#ffeb3b65);
     padding: 10px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
+    box-shadow: 0 0 10px rgb(14, 32, 134);
+    transition: transform 0.3s, background-color 0.3s;
 }
 
 .events-section ul li:hover {
     transform: scale(1.05);
+    background:linear-gradient(#6a4da9,#01d1d1,#00796b);
 }
 
 .events-section ul li img {
@@ -186,64 +205,92 @@ nav ul li a.active {
     font-size: 1.2rem;
 }
 
-.contact-section, .organizers-section {
-    background: #e0f7fa;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    transform: translateY(100%);
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-}
-
-.contact-section.show, .organizers-section.show {
+.contact-section.show, .location-section.show {
     transform: translateY(0);
     opacity: 1;
 }
 
-.contact-grid, .organizer-grid {
+.contact-grid, .location {
+    margin-top: 20px;
+}
+
+.contact-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
 }
-
-.contact-item, .organizer-item {
-    text-align: center;
-    background: #ffffff;
+.contact-item {
+    text-align: center; 
+    background: radial-gradient(#6a4da9,#01d1d1,#08e63166);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
+    transition: transform 0.3s, background-color 0.3s;
 }
 
-.contact-item:hover, .organizer-item:hover {
+.contact-item:hover {
     transform: scale(1.05);
+    background-color: #9ed51e;
 }
 
-.contact-item img, .organizer-item img {
+.contact-item img {
     max-width: 166.66px;
     height: 250px;
     border-radius: 10%;
 }
 
-.contact-item h3, .organizer-item h3 {
+.contact-item h3 {
     margin-top: 10px;
     font-size: 1.2rem;
 }
 
-.contact-item p a, .organizer-item p a {
+.contact-item p a {
     text-decoration: none;
     color: #00796b;
     font-weight: bold;
 }
 
-.contact-item p a:hover, .organizer-item p a:hover {
+.contact-item p a:hover {
     color: #004d40;
+}
+
+.location img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.location a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #ff9800;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.location a:hover {
+    color: #e68900;
+}
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    border-radius: 8px;
 }
 
 .floating-icons {
     position: fixed;
-    top: 20px;
+    top: 100px;
     left: 20px;
     display: flex;
     flex-direction: column;
@@ -267,7 +314,7 @@ nav ul li a.active {
     position: fixed;
     top: 100px;
     right: 20px;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.634);
     color: white;
     padding: 10px;
     border-radius: 8px;
@@ -275,13 +322,30 @@ nav ul li a.active {
     z-index: 1;
 }
 
-.running-message {
+/* New CSS for the moving-message */
+.moving-message {
+    width: 100%;
     background: #4CAF50;
     color: white;
-    text-align: center;
-    padding: 10px 0;
+    overflow: hidden;
+    position: relative;
 }
 
+.moving-message p {
+    display: inline-block;
+    white-space: nowrap;
+    position: absolute;
+    animation: moveMessage 10s linear infinite;
+}
+
+@keyframes moveMessage {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
 footer {
     background-color: #333;
     color: white;
@@ -306,9 +370,36 @@ footer .footer-section h3 {
     margin-top: 0;
 }
 
+footer .footer-section p a {
+    color: #ff9800;
+    text-decoration: none;
+}
+
+footer .footer-section p a:hover {
+    text-decoration: underline;
+}
+
 footer .footer-bottom {
     text-align: center;
     margin-top: 20px;
+}
+
+/* New CSS for the register button */
+.register-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff9800;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-button:hover {
+    background-color: #e68900;
 }
 
 @media (max-width: 768px) {
@@ -323,9 +414,9 @@ footer .footer-bottom {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color: #4CAF50;
+        background: linear-gradient(45deg, #08e631, #01d1d1);
         width: 80%;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 10px rgb(90, 5, 227);
         padding: 0;
         text-align: center;
         z-index: 1000;
@@ -362,5 +453,10 @@ footer .footer-bottom {
     footer .footer-section {
         width: 100%;
         margin-bottom: 20px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 300px;
     }
 }
