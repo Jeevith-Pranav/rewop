@@ -40,39 +40,51 @@ const eventDetails = {
         ●Participants will be allowed carry a plain paper for working out and calculators for the written round<br>`
     },
     'workshop': {
-        title: 'Workshop',
-        rules: 'Rules for Workshop...<br>- Rule 1<br>- Rule 2<br>- Rule 3'
+        title: 'Advancement and Challenges in Electric Vechile Technology',
+        rules: `
+        ●participants should be registered earlier<br>
+        ●participants should have ID card<br><br>
+        This Session Aims To Provide Insights Into The Advancements And Challenges That Characterize The Dynamic Landscape Of The Ev Sector.<br>
+        The Shift Towards Evs Is Creating New Job Opportunities In Manufacturing, Research And Development, And Infrastructure Development. <br>
+        The Speaker Will Share The 1 Challenges In Infrastructure Development, Range Anxiety, Cost And Supply Chain Challenges. <br>
+        The Opportunities In The Ev Sector Are Vast, Driven By A Global Commitment To Sustainable Transportation.<br>`
     },
     'ipl-auction': {
         title: 'IPL Auction',
-        rules: `1. Each team must consist of 3 members in a group.<br>
-2. The team leader’s name should be announced in the form.<br>
-3. Only the team leader can bid during the auction;
-other team members’ bids are not considerable.<br>
-4. Bidding will be conducted with the player’s name,
+        rules: `•Participants must register in advance<br>
+        •Id card must.<br>
+        1. Each team must consist of 3 members in a group.<br><br>
+2. Quiz will be conducted first. The main team will be
+selected based on the quiz result.(question will be related
+to cricket)<br><br>
+3. The team leader’s name should be announced in the
+form.<br><br>
+4. Only the team leader can bid during the auction;
+other team members’ bids are not considerable.<br><br>
+5. Bidding will be conducted with the player’s name,
 base price, country (e.g., Name: Virat Kohli, Base
-Price: 200L, Country: India ).<br>
-5. Each team is required to select 6 players:<br>
- - 2 Batsmen<br>
- - 1 Wicket Keeper<br>
- - 1 All-Rounder<br>
- - 2 Bowlers<br>
-6. A maximum of 2 foreign players can be in the
-playing 6.<br>
-7. If a team successfully buys the maximum number
-of players in each category (role), subsequent bids for
-players in the same category will not be considerable.<br>
-For example, if Team 1 has already bought 2 batsmen,<br>
+Price: 200L, Country: India ).<br><br>
+6. Each team is required to select 6 players:<br>
+- 2 Batsmen
+- 1 Wicket Keeper
+- 1 All-Rounder
+- 2 Bowlers<br><br>
+7. A maximum of 2 foreign players can be in the
+playing 6.<br><br>
+8. If a team successfully buys the maximum number of
+players in each category (role), subsequent bids for
+players in the same category will not be considerable.<br><br>
+9. For example, if Team 1 has already bought 2 batsmen,
 any further bids for batsmen from Team 1 will not be
-considered.<br>
-8. Purse: Each team starts with a total purse of 50cr.<br>
- - Bids under 5cr are increased by 25L.<br>
- - Bids after reaching 5cr are increased by 50L.<br>
-9. Ratings will be revealed after the completion of each
+considered.<br><br>
+10. Purse: Each team starts with a total purse of 50cr.
+- Bids under 5cr are increased by 25L.
+- Bids after reaching 5cr are increased by 50L.<br><br>
+11. Ratings will be revealed after the completion of each
 set(winners is chosen based on the rating of the
-players)<br>
+players)<br><br>
 Further Rules will be conveyed during the
-auction……<br>`
+auction.`
     },
     'music-fest': {
         title: 'Music Fest',
