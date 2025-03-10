@@ -165,7 +165,6 @@ nav ul li a.active {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     background-size: cover;
     background-position: center;
-
 }
 
 .events-section ul {
@@ -183,7 +182,7 @@ nav ul li a.active {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background:linear-gradient(#08e63196,#ffeb3b65);
+    background: linear-gradient(#08e63196, #ffeb3b65);
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgb(14, 32, 134);
@@ -192,7 +191,7 @@ nav ul li a.active {
 
 .events-section ul li:hover {
     transform: scale(1.05);
-    background:linear-gradient(#6a4da9,#01d1d1,#00796b);
+    background: linear-gradient(#6a4da9, #01d1d1, #00796b);
 }
 
 .events-section ul li img {
@@ -219,6 +218,7 @@ nav ul li a.active {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
 }
+
 .contact-item {
     text-align: center; 
     background: radial-gradient(#6a4da9,#01d1d1,#08e63166);
@@ -322,13 +322,13 @@ iframe {
     z-index: 1;
 }
 
-/* New CSS for the moving-message */
 .moving-message {
     width: 100%;
     background: #4CAF50;
     color: white;
     overflow: hidden;
     position: relative;
+    padding: 10px 0;
 }
 
 .moving-message p {
@@ -336,16 +336,18 @@ iframe {
     white-space: nowrap;
     position: absolute;
     animation: moveMessage 10s linear infinite;
+    font-size: 18px;
 }
 
 @keyframes moveMessage {
-    0% {
+    from {
         transform: translateX(100%);
     }
-    100% {
+    to {
         transform: translateX(-100%);
     }
 }
+
 footer {
     background-color: #333;
     color: white;
@@ -400,6 +402,44 @@ footer .footer-bottom {
 
 .register-button:hover {
     background-color: #e68900;
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    text-align: center;
+}
+
+.modal-content button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.modal-content button:hover {
+    background-color: #ddd;
 }
 
 @media (max-width: 768px) {
