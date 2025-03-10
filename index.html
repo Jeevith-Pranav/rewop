@@ -12,7 +12,7 @@
     <header>
         <div class="container">
             <img src="rewop.png" alt="REWOP Logo" class="logo">
-            <h1>  𝑅𝐸𝒲💙𝒫  𝟤𝒦𝟤𝟧 ⚡⚡</h1>
+            <h1>𝑅𝐸𝒲💙𝒫 𝟤𝒦𝟤𝟧 ⚡⚡</h1>
             <nav>
                 <div class="menu-icon" onclick="toggleMenu()">☰</div>
                 <ul id="nav-menu">
@@ -42,7 +42,7 @@
                 <div class="hero-content">
                     <h2>Welcome to REWOP 2K25</h2>
                     <p>Join us on <span class="highlight-date">March 19th</span> for a day filled with exciting events, activities, and opportunities to showcase your talents!</p>
-                    <a href="#" class="hero-button" onclick="showSection('technical-events', false)">Explore Events</a>
+                    <a href="#" class="hero-button" onclick="exploreEvents()">Explore Events</a>
                 </div>
             </div>
             <div class="container">
@@ -210,5 +210,14 @@
             <p>&copy; jeevith Pranav</p>
         </div>
     </footer>
+
+    <!-- Selection Modal -->
+    <div id="selection-modal" class="modal">
+        <div class="modal-content">
+            <h3>Select Event Type</h3>
+            <button onclick="navigateToSection('technical-events')">Technical Events</button>
+            <button onclick="navigateToSection('non-technical-events')">Non-Technical Events</button>
+        </div>
+    </div>
 </body>
 </html>
