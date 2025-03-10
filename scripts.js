@@ -27,7 +27,7 @@ const eventDetails = {
     },
     'circuit-debugging': {
         title: 'Circuit Debugging',
-        rules:` ●participants should be registered earlier<br>
+        rules:`●participants should be registered earlier<br>
         ●participants should have ID card<br>
         ●2 per Team<br>
         ●Two Rounds will be conducted.<br><br>
@@ -130,7 +130,7 @@ Final Round: Reverse Song Challenge<br>
     },
     'meme-creation': {
         title: 'Meme Creation',
-        rules:` ●Participants should be registered earlier<br>
+        rules:`●Participants should be registered earlier<br>
         ●ID must<br>
         ●No extra time will be given.<br>
         ●Event consists of only one round for 45 minutes.<br>
@@ -178,6 +178,17 @@ function toggleMenu() {
     navMenu.classList.toggle('show');
 }
 
+function exploreEvents() {
+    const modal = document.getElementById('selection-modal');
+    modal.style.display = 'block';
+}
+
+function navigateToSection(sectionId) {
+    const modal = document.getElementById('selection-modal');
+    modal.style.display = 'none';
+    showSection(sectionId, false);
+}
+
 // Countdown Timer
 const countdown = () => {
     const eventDate = new Date('2025-03-19T00:00:00').getTime();
@@ -198,3 +209,9 @@ const countdown = () => {
 };
 
 const timerInterval = setInterval(countdown, 1000);
+
+// Event listener for the "Explore Events" button
+document.querySelector('.hero-button').addEventListener('click', (event) => {
+    event.preventDefault();
+    exploreEvents();
+});
