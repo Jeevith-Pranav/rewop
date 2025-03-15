@@ -96,14 +96,12 @@ Game Rules:<br>
 • The final round will determine the winner.<br>
 • In case of a tie, the participant/team that answered the fastest will qualify for the next round.<br>
 <br>
-Round 1: Translate & Identify<br>
-<br>
-• A song clip (middle stanza or BGM) will be played.<br>
-• Players must translate the lyrics into English and identify the song.<br>
-• Each correct answer = 10 points.<br>
-• Top 10 players with the highest scores move to the next round.<br>
-• Tie-breaker: The fastest correct translator and identifier moves forward.<br>
-<br>
+Round 1: Identify & Translate<br><br>
+A song's lyrics will be translated into English and presented to the players<br>.
+Players must identify the original song from the translated lyrics.<br>
+Each correct answer = 10 points.<br>
+Top 10 players with the highest scores move to the next round.<br>
+Tie-breaker: The fastest correct identifier moves forward<br>
 Round 2: Song Association<br>
 <br>
 • A random word will be given to the players.<br>
